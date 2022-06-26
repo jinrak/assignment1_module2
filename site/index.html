@@ -1,30 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Assignment solution for module2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment solution for module2</title>
 <style >
 	*{
 		box-sizing: border-box;
 	}
 	h1{
+		text-align: center;
 		margin-bottom: 20px;
 	}
-	p{
+	div #section1{
+		box-sizing: border-box;
+		position: relative;
+		top:60px;
+	}
+	div #section2{
+		box-sizing: border-box;
+		position: relative;
+		top:60px;
+	}
+	div #section3{
+		box-sizing: border-box;
+		position: relative;
+		top:60px;
+	}
+	#p1{
+		width: 100px;
+		height: 20px;
+		text-align: center;
+		border: 1px solid black;
+		background-color:#E77471 ;
+		position:absolute;
+		top:1px ;
+		right:1px ;
+	}
+	#p2{
+		width: 100px;
+		height: 20px;
+		text-align: center;
+		border: 1px solid black;
+		background-color:#B21807;
+		position:absolute;
+		top:1px ;
+		right:1px ;
+	}
+	#p3{
+		width: 100px;
+		height: 20px;
+		text-align: center;
+		border: 1px solid black;
+		background-color:#C68E17;
+		position:absolute;
+		top:1px ;
+		right:1px ;
+	}
+	#p4{
+		padding: 20px;
 		border: 1px solid black;
 		background-color:  #686A6C;
-		width:80%;
+		width:90%;
 		height: 150px;
 		margin-left: auto;
 		font-family: Helvetica;
 		color: white;
 	}
 	.row{
+		float: left;
 		width: 100%;
+		position: relative;
+
+		
 	}
+
+	
+
 	@media(min-width: 992px){
 		.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
 			float: left;
-			border: 1px solid green;
+			border: 1px ;
 		}
 		.col-lg-1{
 			width: 8.33%;
@@ -187,12 +243,14 @@
 <body>
 <h1>Our Menu</h1>
 <div class="row">
-	<div class ="col-lg-4 col-md-6 col-sm-12"><p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
+	<div id="section1" class ="col-lg-4 col-md-6 col-sm-12"><p id="p1">Chicken</p><p id="p4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
 
-	<div class ="col-lg-4 col-md-6 col-sm-12"><p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
+	<div id="section2" class ="col-lg-4 col-md-6 col-sm-12"><p id="p2">Beef</p><p id="p4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
 
-	<div class ="col-lg-4 col-md-12 col-sm-12"><p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
-	TEST
+	<div id="section3"  class ="col-lg-4 col-md-12 col-sm-12"><p id="p3">Sushi</p><p id="p4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p></div>
+
+	
+
 </div>
 
 </body>
